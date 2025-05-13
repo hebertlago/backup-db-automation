@@ -1,0 +1,18 @@
+# Arquivos sensíveis
+credentials.json
+token.pickle
+last_drive_file.txt
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+
+# Ambientes virtuais
+.env
+.venv/
+venv/
+
+# IDEs e configurações locais
+.vscode/
+.idea/

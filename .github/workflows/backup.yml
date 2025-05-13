@@ -1,0 +1,37 @@
+name: Backup Automation CI
+
+on:
+  schedule:
+    - cron: '0 5 * * *'  # Executa diariamente às 02:00 BRT (5h UTC)
+  workflow_dispatch:  # Permite rodar manualmente no Actions
+
+jobs:
+  run-backup:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout do código
+      uses: actions/checkout@v4
+
+    - name: Configurar Python 3.x
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Instalar dependências
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pytest
+
+    - name: Rodar testes unitários
+      run: |
+        pytest tests/
+
+    - name: Simular Backup (Mock)
+      run: |
+        echo "Simulando backup do banco de dados PostgreSQL..."
+        echo "Gerando arquivo de backup fictício..."
+        echo "Backup gerado em /tmp/backup_test.sql"
+        echo "Simulando upload no Google Drive..."
+        echo "✅ Backup simulado com sucesso!"
