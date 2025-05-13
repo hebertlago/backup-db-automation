@@ -24,8 +24,8 @@
 ## 📦 Instalação
 Clone o repositório:
 ```bash
-git clone [[https://github.com/seu-usuario/nome-do-repo.git]()](https://github.com/hebertlago/backup-db-automation)
-cd [nome-do-repo](backup-db-automation)
+git clone (https://github.com/hebertlago/backup-db-automation)
+cd (backup-db-automation)
 ```
 
 Instale as dependências:
