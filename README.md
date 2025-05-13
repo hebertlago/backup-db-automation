@@ -51,21 +51,15 @@ python backup.py
 ```
 backup_db/
 ├── backup.py                # Script principal
-├── credentials.json         # (Ignorado no Git) Credenciais do Google API
-├── last_drive_file.txt      # (Ignorado no Git) Controle do último arquivo enviado
 ├── requirements.txt         # Dependências do projeto
-├── token.pickle             # (Ignorado no Git) Token de autenticação
 ├── .gitignore               # Arquivos e pastas ignoradas no Git
 └── README.md                # Documentação do projeto
 ```
 
-## 🔐 Importante
-⚠️ **Nunca envie arquivos de credenciais (credentials.json, token.pickle) para o repositório público.**  
-Utilize o `.gitignore` para proteger essas informações.
 
 ## 📝 Licença
 Este projeto está licenciado sob a licença MIT.
 
 ---
 
-Desenvolvido por [Seu Nome](https://github.com/seu-usuario)
+Desenvolvido por [Hebert Lago](https://github.com/hebertlago)
